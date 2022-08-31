@@ -31,34 +31,86 @@ var booths = [
         isTollFree: false,
         vehicleNumberUser: "Dhaka Ka-123546",
         barrierOpenTime: "10:00 am",
-        barrierCloseTime: "10:01 am"
+        barrierCloseTime: "10:01 am",
+        shiftTime:"Morning",
+        receivedAmount:"12345"
     },
     {
-        id: 1,
+        id: 2,
         amount: 150,
         operator: "Hasib Op1",
         isTollFree: false,
         vehicleNumberUser: "Dhaka Cha-2423546",
         barrierOpenTime: "10:05 am",
-        barrierCloseTime: "10:06 am"
+        barrierCloseTime: "10:06 am",
+        shiftTime:"Evening",
+        receivedAmount:"132345"
     },
     {
-        id: 2,
+        id: 3,
         amount: 100,
         operator: "Hasib Op2",
         isTollFree: false,
         vehicleNumberUser: "Dhaka Ga-423546",
         barrierOpenTime: "12:00 pm",
-        barrierCloseTime: "12:01 pm"
+        barrierCloseTime: "12:01 pm",
+        shiftTime:"Night",
+        receivedAmount:"152345"
     },
     {
-        id: 2,
+        id: 4,
         amount: 170,
         operator: "Hasib Op2",
         isTollFree: false,
         vehicleNumberUser: "Dhaka Na-3523546",
         barrierOpenTime: "04:00 pm",
-        barrierCloseTime: "04:01 pm"
+        barrierCloseTime: "04:01 pm",
+        shiftTime:"Evening",
+        receivedAmount:"123245"
+    },
+    {
+        id: 5,
+        amount: 170,
+        operator: "Hasib Op2",
+        isTollFree: false,
+        vehicleNumberUser: "Dhaka Na-3523546",
+        barrierOpenTime: "04:00 pm",
+        barrierCloseTime: "04:01 pm",
+        shiftTime:"Night",
+        receivedAmount:"42345"
+    },
+    {
+        id: 6,
+        amount: 170,
+        operator: "Hasib Op2",
+        isTollFree: false,
+        vehicleNumberUser: "Dhaka Na-3523546",
+        barrierOpenTime: "04:00 pm",
+        barrierCloseTime: "04:01 pm",
+        shiftTime:"Morning",
+        receivedAmount:"12345"
+    },
+    {
+        id: 7,
+        amount: 170,
+        operator: "Hasib Op2",
+        isTollFree: false,
+        vehicleNumberUser: "Dhaka Na-3523546",
+        barrierOpenTime: "04:00 pm",
+        barrierCloseTime: "04:01 pm",
+        shiftTime:"Evening",
+        receivedAmount:"1345"
+    },
+    {
+        id: 8,
+        amount: 170,
+        operator: "Hasib Op2",
+        isTollFree: false,
+        vehicleNumberUser: "Dhaka Na-3523546",
+        barrierOpenTime: "04:00 pm",
+        barrierCloseTime: "04:01 pm",
+        shiftTime:"Night",
+        receivedAmount:"12345"
     },
 ];
 const bitmap = fs.readFileSync("favicon.png");

@@ -14,23 +14,21 @@
 
 <body>
   <div style="text-align: center;  margin-bottom: 10px;">
-    <small style="font-size:15px; margin-top: 0px;">Government of the People's Republic of Bangladesh</small>
+    <small style="font-size:10px; margin-top: 0px;">Government of the People's Republic of Bangladesh</small>
      <br> 
-    <img src="data:image/png;base64,{{logo}}" height="25px" width="25px" />
+    <img src="data:image/png;base64,{{logo}}" height="20px" width="20px" />
     <span>Kalna Bridge Toll Plaza</span> <br> <br>
     <p style="margin-top: 0"><small>Date: {{currentDate}}</small></p>
-    <hr style="text-align: center;">
   </div>
-  <h3>Shift Details Report:(Daily)</h2>
+  <h3 style="text-align: center">Shift Details Report:(Daily)</h2>
   
   <div class="container">
     <table class="table table-bordered table-striped table-sm">
         
       <thead>
         <tr style="text-align: center;">
-            <th colspan="3">Shift Name:Morning</th>
-            <th colspan="3">Start Time: 10 AM</th>
-            <th colspan="3">End Time: 8 PM</th>    
+            <th colspan="12">Shift Name: Morning</th>
+               
         </tr>
         <br>
         <tr>
@@ -46,11 +44,11 @@
         {{#each booths}}
         <tr style="text-align: center;">
           <!-- <th>{{this.id}}</th> -->
-          <td>1</td>
-          <td colspan="2">Hasib Vai</td>
+          <td>{{this.id}}</td>
+          <td colspan="2">{{this.operator}}</td>
           <td>50</td>
-          <td>Morning</td>
-          <td>1000</td>
+          <td>{{this.shiftTime}}</td>
+          <td>{{this.receivedAmount}}</td>
           <td>1000</td>
           
           <!-- <th>{{this.id}}</th> -->
@@ -70,12 +68,19 @@
         </tr>
       </tbody>
     </table>
-  </div>
-  <h4 style="margin-top: 80px;"> Created at : <span><small>{{currentDate}}</small></span> </h3>
-  <br><br>
-        <h4>Signature:</h4>
-    <hr style="width: 50%; text-align: center; ">
-    <h4 style="text-align: end">First page</h4>
+  </div> 
+  <br><br><br>
+  <hr style="width: 50%; text-align: center; ">
+  <p>Signature:</p>
+  <br>
+    <div class=" d-flex justify-content-between align-items-center">
+      <div>
+        <h4>Page 1</h4>
+      </div>
+     <div>
+        <h4 > Created at : <span><small>{{currentDate}}</small></span> </h3>
+     </div>
+    </div>
 </body>
 
 </html>

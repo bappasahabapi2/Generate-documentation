@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>{{title}}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    table {
+      font-size: 11px;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="text-align: center;  margin-bottom: 10px;">
+    <small style="font-size:15px; margin-top: 0px;">Government of the People's Republic of Bangladesh</small>
+     <br> 
+    <img src="data:image/png;base64,{{logo}}" height="25px" width="25px" />
+    <span>Kalna Bridge Toll Plaza</span> <br> <br>
+    <p style="margin-top: 0"><small>Date: {{currentDate}}</small></p>
+    <hr style="text-align: center;">
+  </div>
+  <h3>Shift Details Report:(Daily)</h2>
+  
+  <div class="container">
+    <table class="table table-bordered table-striped table-sm">
+        
+      <thead>
+        <tr style="text-align: center;">
+            <th colspan="3">Shift Name:Morning</th>
+            <th colspan="3">Start Time: 10 AM</th>
+            <th colspan="3">End Time: 8 PM</th>    
+        </tr>
+        <br>
+        <tr>
+          <th>Booth No</th>
+          <th colspan="2">Operator</th>
+          <th>Total Car</th>
+          <th>Status</th>
+          <th>Received Amount</th>
+          <th>Collected Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each booths}}
+        <tr style="text-align: center;">
+          <!-- <th>{{this.id}}</th> -->
+          <td>1</td>
+          <td colspan="2">Hasib Vai</td>
+          <td>50</td>
+          <td>Morning</td>
+          <td>1000</td>
+          <td>1000</td>
+          
+          <!-- <th>{{this.id}}</th> -->
+          <!-- <td>{{this.operator}}</td> -->
+          <!-- <td>{{this.amount}}</td> -->
+          <!-- <td>{{this.isTollFree}}</td> -->
+          <!-- <td>{{this.vehicleNumberUser}}</td> -->
+          <!-- <td>{{this.barrierOpenTime}}</td> -->
+          <!-- <td>{{this.barrierCloseTime}}</td> -->
+        </tr>
+        {{/each}}
+        <tr style="text-align: center;">
+          <th colspan="3">Total Car</th>
+          <td>456</td>
+          <th colspan="2">Total Collected Toll</th>
+          <td>7676</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h4 style="margin-top: 80px;"> Created at : <span><small>{{currentDate}}</small></span> </h3>
+  <br><br>
+        <h4>Signature:</h4>
+    <hr style="width: 50%; text-align: center; ">
+    <h4 style="text-align: end">First page</h4>
+</body>
+
+</html>

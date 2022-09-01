@@ -14,12 +14,12 @@ var options = {
     //     contents: '<div style="text-align: center; font-size: 30px;">Kalna Toll Plaza</div>'
     // },
     footer: {
-        height: "28mm",
+        height: "5mm",
         contents: {
-            first: 'First page',
-            2: 'Second page', // Any page number is working. 1-based index
-            default: '<span style="color: #444;">{{page}}</span>/<span>{{pages}}</span>', // fallback value
-            last: 'Last Page'
+            // first: 'First page',
+            // 2: 'Second page', // Any page number is working. 1-based index
+            default: '<div style="text-align:right"> <span style="color: #444;">{{page}}</span>/<span>{{pages}}</span></div>', // fallback value
+            // last: 'Last Page'
         }
     }
 };
@@ -33,84 +33,92 @@ var booths = [
         barrierOpenTime: "10:00 am",
         barrierCloseTime: "10:01 am",
         shiftTime:"Morning",
-        receivedAmount:"12345"
+        receivedAmount:"12345",
+        collectedAmount:"27346"
     },
     {
         id: 2,
         amount: 150,
-        operator: "Hasib Op1",
+        operator: "Hasib Op2",
         isTollFree: false,
         vehicleNumberUser: "Dhaka Cha-2423546",
         barrierOpenTime: "10:05 am",
         barrierCloseTime: "10:06 am",
         shiftTime:"Evening",
-        receivedAmount:"132345"
+        receivedAmount:"132345",
+        collectedAmount:"22346"
     },
     {
         id: 3,
         amount: 100,
-        operator: "Hasib Op2",
+        operator: "Hasib Op3",
         isTollFree: false,
         vehicleNumberUser: "Dhaka Ga-423546",
         barrierOpenTime: "12:00 pm",
         barrierCloseTime: "12:01 pm",
         shiftTime:"Night",
-        receivedAmount:"152345"
+        receivedAmount:"152345",
+        collectedAmount:"234446"
     },
     {
         id: 4,
         amount: 170,
-        operator: "Hasib Op2",
+        operator: "Hasib Op4",
         isTollFree: false,
         vehicleNumberUser: "Dhaka Na-3523546",
         barrierOpenTime: "04:00 pm",
         barrierCloseTime: "04:01 pm",
         shiftTime:"Evening",
-        receivedAmount:"123245"
+        receivedAmount:"123245",
+        collectedAmount:"442346"
     },
     {
         id: 5,
         amount: 170,
-        operator: "Hasib Op2",
+        operator: "Hasib Op5",
         isTollFree: false,
         vehicleNumberUser: "Dhaka Na-3523546",
         barrierOpenTime: "04:00 pm",
         barrierCloseTime: "04:01 pm",
         shiftTime:"Night",
-        receivedAmount:"42345"
+        receivedAmount:"42345",
+        collectedAmount:"22346"
     },
     {
         id: 6,
         amount: 170,
-        operator: "Hasib Op2",
+        operator: "Hasib Op6",
         isTollFree: false,
         vehicleNumberUser: "Dhaka Na-3523546",
         barrierOpenTime: "04:00 pm",
         barrierCloseTime: "04:01 pm",
         shiftTime:"Morning",
-        receivedAmount:"12345"
+        receivedAmount:"12345",
+        collectedAmount:"442346"
     },
     {
         id: 7,
         amount: 170,
-        operator: "Hasib Op2",
+        operator: "Hasib Op7",
         isTollFree: false,
         vehicleNumberUser: "Dhaka Na-3523546",
         barrierOpenTime: "04:00 pm",
         barrierCloseTime: "04:01 pm",
         shiftTime:"Evening",
-        receivedAmount:"1345"
+        receivedAmount:"1345",
+        collectedAmount:"23446"
     },
     {
         id: 8,
         amount: 170,
-        operator: "Hasib Op2",
+        operator: "Hasib Op8",
         isTollFree: false,
         vehicleNumberUser: "Dhaka Na-3523546",
         barrierOpenTime: "04:00 pm",
         barrierCloseTime: "04:01 pm",
         shiftTime:"Night",
-        receivedAmount:"12345"
+        receivedAmount:"12345",
+        collectedAmount:"2346"
     },
 ];
 const bitmap = fs.readFileSync("favicon.png");

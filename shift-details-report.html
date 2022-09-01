@@ -10,77 +10,137 @@
       font-size: 11px;
     }
   </style>
-</head>
 
+</head>
 <body>
   <div style="text-align: center;  margin-bottom: 10px;">
-    <small style="font-size:10px; margin-top: 0px;">Government of the People's Republic of Bangladesh</small>
-     <br> 
-    <img src="data:image/png;base64,{{logo}}" height="20px" width="20px" />
-    <span>Kalna Bridge Toll Plaza</span> <br> <br>
-    <p style="margin-top: 0"><small>Date: {{currentDate}}</small></p>
+      <small style="font-size:10px; margin-top: 0px;">Government of the People's Republic of Bangladesh</small>
+      <br> 
+      <img src="data:image/png;base64,{{logo}}" height="20px" width="20px" />
+      <span>Kalna Bridge Toll Plaza</span> 
+      <p style="margin-top: 0; font-size:11px"><small>Date: <span> {{currentDate}}</span></small></p>
   </div>
-  <h3 style="text-align: center">Shift Details Report:(Daily)</h2>
-  
+  <h3 style="text-align: center">Shift Details Report: (Daily)</h2>
   <div class="container">
-    <table class="table table-bordered table-striped table-sm">
-        
-      <thead>
-        <tr style="text-align: center;">
-            <th colspan="12">Shift Name: Morning</th>
-               
-        </tr>
-        <br>
-        <tr>
-          <th>Booth No</th>
-          <th colspan="2">Operator</th>
-          <th>Total Car</th>
-          <th>Status</th>
-          <th>Received Amount</th>
-          <th>Collected Amount</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each booths}}
-        <tr style="text-align: center;">
-          <!-- <th>{{this.id}}</th> -->
-          <td>{{this.id}}</td>
-          <td colspan="2">{{this.operator}}</td>
-          <td>50</td>
-          <td>{{this.shiftTime}}</td>
-          <td>{{this.receivedAmount}}</td>
-          <td>1000</td>
-          
-          <!-- <th>{{this.id}}</th> -->
-          <!-- <td>{{this.operator}}</td> -->
-          <!-- <td>{{this.amount}}</td> -->
-          <!-- <td>{{this.isTollFree}}</td> -->
-          <!-- <td>{{this.vehicleNumberUser}}</td> -->
-          <!-- <td>{{this.barrierOpenTime}}</td> -->
-          <!-- <td>{{this.barrierCloseTime}}</td> -->
-        </tr>
-        {{/each}}
-        <tr style="text-align: center;">
-          <th colspan="3">Total Car</th>
-          <td>456</td>
-          <th colspan="2">Total Collected Toll</th>
-          <td>7676</td>
-        </tr>
-      </tbody>
-    </table>
+      <table class="table table-bordered table-striped table-sm"> 
+        <thead>
+          <tr style="text-align: center;">
+              <th colspan="12"> Morning</th>
+          </tr>
+          <br>
+          <tr style="text-align: center;">
+            <th>Booth No</th>
+            <th colspan="2">Operator</th>
+            <th>Total Car</th>
+            <th>Status</th>
+            <th>Received Amount</th>
+            <th>Collected Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each booths}}
+          <tr style="text-align: center;">
+            <td>{{this.id}}</td>
+            <td colspan="2">{{this.operator}}</td>
+            <td>50</td>
+            <td>{{this.shiftTime}}</td>
+            <td>{{this.receivedAmount}}</td>
+            <td>{{this.collectedAmount}}</td>
+          </tr>
+          {{/each}}
+          <tr style="text-align: center;">
+            <th colspan="3">Total Car</th>
+            <td>400</td>
+            <th colspan="2">Total Collected Toll</th>
+            <td>7676</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table table-bordered table-striped table-sm"> 
+        <thead>
+          <tr style="text-align: center;">
+              <th colspan="12"> Morning</th>
+          </tr>
+          <br>
+          <tr style="text-align: center;">
+            <th>Booth No</th>
+            <th colspan="2">Operator</th>
+            <th>Total Car</th>
+            <th>Status</th>
+            <th>Received Amount</th>
+            <th>Collected Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each booths}}
+          <tr style="text-align: center;">
+            <td>{{this.id}}</td>
+            <td colspan="2">{{this.operator}}</td>
+            <td>50</td>
+            <td>{{this.shiftTime}}</td>
+            <td>{{this.receivedAmount}}</td>
+            <td>{{this.collectedAmount}}</td>
+          </tr>
+          {{/each}}
+          <tr style="text-align: center;">
+            <th colspan="3">Total Car</th>
+            <td>400</td>
+            <th colspan="2">Total Collected Toll</th>
+            <td>7676</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table table-bordered table-striped table-sm"> 
+        <thead>
+          <tr style="text-align: center;">
+              <th colspan="12"> Morning</th>
+          </tr>
+          <br>
+          <tr style="text-align: center;">
+            <th>Booth No</th>
+            <th colspan="2">Operator</th>
+            <th>Total Car</th>
+            <th>Status</th>
+            <th>Received Amount</th>
+            <th>Collected Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each booths}}
+          <tr style="text-align: center;">
+            <td>{{this.id}}</td>
+            <td colspan="2">{{this.operator}}</td>
+            <td>50</td>
+            <td>{{this.shiftTime}}</td>
+            <td>{{this.receivedAmount}}</td>
+            <td>{{this.collectedAmount}}</td>
+          </tr>
+          {{/each}}
+          <tr style="text-align: center;">
+            <th colspan="3">Total Car</th>
+            <td>400</td>
+            <th colspan="2">Total Collected Toll</th>
+            <td>7676</td>
+          </tr>
+        </tbody>
+      </table>
   </div> 
   <br><br><br>
-  <hr style="width: 50%; text-align: center; ">
-  <p>Signature:</p>
-  <br>
-    <div class=" d-flex justify-content-between align-items-center">
-      <div>
-        <h4>Page 1</h4>
-      </div>
-     <div>
-        <h4 > Created at : <span><small>{{currentDate}}</small></span> </h3>
-     </div>
-    </div>
+  
+    <!-- <div class="d-flex flex-row "> -->
+      <!-- <hr style="width:25%; text-align:right;"> -->
+       <p style="font-size: 13px;  font-family:'Times New Roman'; text-align: end;">
+        <span><hr style="width: 25%;"></span>
+        Signature   </p>
+    <!-- </div>  -->
+  <footer>
+        <div style="font-family:'Times New Roman';" class="d-flex justify-content-between ">
+               <span style="font-size: 11px ;" > Generated at : <span><small>{{currentDate}}</small></span> 
+               <span class="p-5 ms-5">Generated by: </span>
+        </div>
+        <span>{{this.FirstPage}}</span>
+    </footer>
+    
 </body>
 
 </html>

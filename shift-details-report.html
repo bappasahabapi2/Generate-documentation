@@ -9,6 +9,9 @@
     table {
       font-size: 11px;
     }
+    tr{
+      text-align: center;
+    }
   </style>
 
 </head>
@@ -22,121 +25,55 @@
   </div>
   <h3 style="text-align: center">Shift Details Report: (Daily)</h2>
   <div class="container">
-      <table class="table table-bordered table-striped table-sm"> 
-        <thead>
-          <tr style="text-align: center;">
-              <th colspan="12"> Morning</th>
-          </tr>
-          <br>
-          <tr style="text-align: center;">
-            <th>Booth No</th>
-            <th colspan="2">Operator</th>
-            <th>Total Car</th>
-            <th>Status</th>
-            <th>Received Amount</th>
-            <th>Collected Amount</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{#each booths}}
-          <tr style="text-align: center;">
-            <td>{{this.id}}</td>
-            <td colspan="2">{{this.operator}}</td>
-            <td>50</td>
-            <td>{{this.shiftTime}}</td>
-            <td>{{this.receivedAmount}}</td>
-            <td>{{this.collectedAmount}}</td>
-          </tr>
-          {{/each}}
-          <tr style="text-align: center;">
-            <th colspan="3">Total Car</th>
-            <td>400</td>
-            <th colspan="2">Total Collected Toll</th>
-            <td>7676</td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="table table-bordered table-striped table-sm"> 
-        <thead>
-          <tr style="text-align: center;">
-              <th colspan="12"> Morning</th>
-          </tr>
-          <br>
-          <tr style="text-align: center;">
-            <th>Booth No</th>
-            <th colspan="2">Operator</th>
-            <th>Total Car</th>
-            <th>Status</th>
-            <th>Received Amount</th>
-            <th>Collected Amount</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{#each booths}}
-          <tr style="text-align: center;">
-            <td>{{this.id}}</td>
-            <td colspan="2">{{this.operator}}</td>
-            <td>50</td>
-            <td>{{this.shiftTime}}</td>
-            <td>{{this.receivedAmount}}</td>
-            <td>{{this.collectedAmount}}</td>
-          </tr>
-          {{/each}}
-          <tr style="text-align: center;">
-            <th colspan="3">Total Car</th>
-            <td>400</td>
-            <th colspan="2">Total Collected Toll</th>
-            <td>7676</td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="table table-bordered table-striped table-sm"> 
-        <thead>
-          <tr style="text-align: center;">
-              <th colspan="12"> Morning</th>
-          </tr>
-          <br>
-          <tr style="text-align: center;">
-            <th>Booth No</th>
-            <th colspan="2">Operator</th>
-            <th>Total Car</th>
-            <th>Status</th>
-            <th>Received Amount</th>
-            <th>Collected Amount</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{#each booths}}
-          <tr style="text-align: center;">
-            <td>{{this.id}}</td>
-            <td colspan="2">{{this.operator}}</td>
-            <td>50</td>
-            <td>{{this.shiftTime}}</td>
-            <td>{{this.receivedAmount}}</td>
-            <td>{{this.collectedAmount}}</td>
-          </tr>
-          {{/each}}
-          <tr style="text-align: center;">
-            <th colspan="3">Total Car</th>
-            <td>400</td>
-            <th colspan="2">Total Collected Toll</th>
-            <td>7676</td>
-          </tr>
-        </tbody>
-      </table>
+    <table class="table table-bordered table-striped table-sm"> 
+      <thead>
+        <tr>
+            <th colspan="12" class="p-2"> Morning</th>
+        </tr>
+        <br>
+        <tr>
+          <th>Booth No</th>
+          <th colspan="2">Operator</th>
+          <th>Status</th>
+          <th>Total Car</th>
+          <th>Received Amount</th>
+          <th>Collected Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each booths}}
+        <tr>
+          <td>{{this.id}}</td>
+          <td colspan="2">{{this.operator}}</td>
+          <td>{{this.shiftTime}}</td>
+          <td>50</td>
+          <td>{{this.receivedAmount}}</td>
+          <td>{{this.collectedAmount}}</td>
+        </tr>
+        {{/each}}
+        <tr>
+          <th colspan="4">Total</th>
+          <td>400</td>
+          <td>5000</td>
+          <td>7676</td>
+        </tr>
+      </tbody>
+    </table>
+      
+      
   </div> 
   <br><br><br>
   
     <!-- <div class="d-flex flex-row "> -->
       <!-- <hr style="width:25%; text-align:right;"> -->
-       <p style="font-size: 13px;  font-family:'Times New Roman'; text-align: end;">
-        <span><hr style="width: 25%;"></span>
+       <p style="font-size: 13px;  font-family:'Times New Roman'; text-align: right;">
+        <!-- <span><hr style="width: 25%;"></span> -->
         Signature   </p>
     <!-- </div>  -->
   <footer>
         <div style="font-family:'Times New Roman';" class="d-flex justify-content-between ">
                <span style="font-size: 11px ;" > Generated at : <span><small>{{currentDate}}</small></span> 
-               <span class="p-5 ms-5">Generated by: </span>
+               <span class="p-5 ms-5">Generated by: <small>{{this.generateBy}}</small> </span>
         </div>
         <span>{{this.FirstPage}}</span>
     </footer>

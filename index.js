@@ -23,6 +23,7 @@ var options = {
         }
     }
 };
+
 var booths = [
     {
         id: 1,
@@ -32,7 +33,7 @@ var booths = [
         vehicleNumberUser: "Dhaka Ka-123546",
         barrierOpenTime: "10:00 am",
         barrierCloseTime: "10:01 am",
-        shiftTime:"Morning",
+        shiftTime:"Approved",
         receivedAmount:"12345",
         collectedAmount:"27346"
     },
@@ -44,7 +45,7 @@ var booths = [
         vehicleNumberUser: "Dhaka Cha-2423546",
         barrierOpenTime: "10:05 am",
         barrierCloseTime: "10:06 am",
-        shiftTime:"Evening",
+        shiftTime:"Pending",
         receivedAmount:"132345",
         collectedAmount:"22346"
     },
@@ -56,7 +57,7 @@ var booths = [
         vehicleNumberUser: "Dhaka Ga-423546",
         barrierOpenTime: "12:00 pm",
         barrierCloseTime: "12:01 pm",
-        shiftTime:"Night",
+        shiftTime:"Approved",
         receivedAmount:"152345",
         collectedAmount:"234446"
     },
@@ -68,7 +69,7 @@ var booths = [
         vehicleNumberUser: "Dhaka Na-3523546",
         barrierOpenTime: "04:00 pm",
         barrierCloseTime: "04:01 pm",
-        shiftTime:"Evening",
+        shiftTime:"Pending",
         receivedAmount:"123245",
         collectedAmount:"442346"
     },
@@ -80,7 +81,7 @@ var booths = [
         vehicleNumberUser: "Dhaka Na-3523546",
         barrierOpenTime: "04:00 pm",
         barrierCloseTime: "04:01 pm",
-        shiftTime:"Night",
+        shiftTime:"Approved",
         receivedAmount:"42345",
         collectedAmount:"22346"
     },
@@ -92,7 +93,7 @@ var booths = [
         vehicleNumberUser: "Dhaka Na-3523546",
         barrierOpenTime: "04:00 pm",
         barrierCloseTime: "04:01 pm",
-        shiftTime:"Morning",
+        shiftTime:"Pending",
         receivedAmount:"12345",
         collectedAmount:"442346"
     },
@@ -104,7 +105,7 @@ var booths = [
         vehicleNumberUser: "Dhaka Na-3523546",
         barrierOpenTime: "04:00 pm",
         barrierCloseTime: "04:01 pm",
-        shiftTime:"Evening",
+        shiftTime:"Approved",
         receivedAmount:"1345",
         collectedAmount:"23446"
     },
@@ -116,7 +117,7 @@ var booths = [
         vehicleNumberUser: "Dhaka Na-3523546",
         barrierOpenTime: "04:00 pm",
         barrierCloseTime: "04:01 pm",
-        shiftTime:"Night",
+        shiftTime:"Pending",
         receivedAmount:"12345",
         collectedAmount:"2346"
     },
@@ -132,7 +133,8 @@ var document = {
         booths: booths,
         totalCashAmount: '470tk',
         totalCar: 4,
-        currentDate: new Date().toLocaleString()
+        currentDate: new Date().toLocaleString(),
+        generateBy:'Sakib Al Hasan'
     },
     path: "./shift-details-report.pdf",
     type: "",
